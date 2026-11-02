@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Photo Resizer to Exact KB — 20KB, 50KB, 100KB Free Online</title><meta name="description" content="Resize a photo to exactly 20KB, 50KB or 100KB for SSC, IBPS, UPSC and PAN forms. Free, no sign-up, photo never uploaded.">
+<link rel="canonical" href="https://example.pages.dev/photo-resizer.html"><link rel="stylesheet" href="/style.css">
+<!-- PREVIEW ONLY. No AdSense code. No real domain yet. --></head><body>
+<div class="topbar"><div><span>Free tools</span><span>Your photos never leave your browser</span><span>No sign-up</span></div></div>
+<header class="site"><nav class="nav"><a class="brand" href="/"><span class="mark">KB</span> ExactKB Photo Tools</a>
+<a class="n" href="/photo-resizer.html">Photo Resizer</a><a class="n" href="/signature-resizer.html">Signature Resizer</a><a class="n" href="/passport-photo-maker.html">Passport Photo</a><a class="n" href="/blog/">Guides</a>
+<a class="cta" href="/photo-resizer.html">Resize a photo</a></nav></header>
+<main>
+<h1>Photo Resizer to Exact KB</h1><p class="lead">Resize a photo to 20 KB, 50 KB, 100 KB, or 200 KB for SSC, IBPS, UPSC, NTA, PAN, and college forms. Free, no sign-up, photo never uploaded.</p>
+
+<div class="card toolcard">
+<div class="drop" id="drop" role="button" tabindex="0" aria-label="Upload a photo"><div class="big">⬆</div><strong>Drop your photo here, or tap to choose one</strong><span>JPG or PNG &nbsp;•&nbsp; Works on mobile &nbsp;•&nbsp; Nothing is uploaded</span></div>
+<input type="file" id="fileInput" accept="image/*" hidden>
+<div class="preview-wrap" id="previewWrap"><img id="preview" alt="Preview of your uploaded photo"><div class="meta" id="origMeta"></div></div>
+<label>Choose your target size</label><div class="presets">
+<button type="button" class="preset" onclick="setTarget(20,this)">20 KB</button>
+<button type="button" class="preset active" onclick="setTarget(50,this)">50 KB</button>
+<button type="button" class="preset" onclick="setTarget(100,this)">100 KB</button>
+<button type="button" class="preset" onclick="setTarget(200,this)">200 KB</button></div>
+<select id="targetKB" onchange="setTarget(parseInt(this.value),null)" style="margin-top:10px"><option value="20">20 KB</option><option value="50" selected>50 KB</option><option value="100">100 KB</option><option value="200">200 KB</option><option value="500">500 KB</option></select>
+<button class="btn" id="goBtn" onclick="runResize()">Resize photo</button>
+<div id="result" class="result" aria-live="polite"></div>
+<label>Maximum width</label><select id="maxW"><option value="2000">2000 px (best quality)</option><option value="1200">1200 px</option><option value="800">800 px (smallest files)</option></select><p class="small">JPEG compresses far better than PNG for photos. If your original is PNG, the tool converts it to JPEG for the KB target.</p>
+</div>
+<h2>Before you upload to a form</h2><ol><li>Check the downloaded file size on your phone or computer.</li><li>Check that the face is clear and not stretched.</li><li>Keep the original photo safe — you may need it again for another form.</li></ol>
+</main>
+<footer><div class="w"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms.html">Terms</a><span>Free tools for exam, job, and ID photos. Preview build, not yet published.</span></div></footer>
+<script src="/app.js"></script></body></html>
